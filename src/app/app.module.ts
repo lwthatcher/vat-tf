@@ -3,11 +3,13 @@ import { NgModule } from '@angular/core';
 
 
 import { AppComponent } from './app.component';
+import { RecognizerComponent } from './recognizer/recognizer.component';
 
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    RecognizerComponent
   ],
   imports: [
     BrowserModule
