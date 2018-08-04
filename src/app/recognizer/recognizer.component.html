@@ -5,8 +5,8 @@
     </button>    
   </div>
   <div class='col'>
-    <button class="btn btn-primary" (click)="compute()">
-      To Tensor
+    <button class="btn btn-primary" [disabled]="!ready" (click)="compute()">
+      Compute Stuff!
     </button>    
   </div>
 </div>

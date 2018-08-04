@@ -3,7 +3,7 @@ import * as tf from '@tensorflow/tfjs';
 import * as d3 from "d3";
 import { Tensor } from '@tensorflow/tfjs';
 
-const DATA_LABELLED = {'pills-blue': true, 'pills-pink': true, 'run-red': false}
+const DATA_LABELLED = {'pills-blue': true, 'pills-pink': true}
 
 
 @Component({
@@ -33,6 +33,10 @@ export class RecognizerComponent implements OnInit {
     this.loadData(dataset);
     console.info('recognizer initialized', this);
   }
+  // #endregion
+
+  // #region [Accessors]
+  get ready() { return !!this.data }
   // #endregion
 
   // #region [Event Handlers]
